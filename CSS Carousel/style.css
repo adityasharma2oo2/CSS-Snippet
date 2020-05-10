@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    text-align: center;
+    margin-top: 2em;
+    color: #DAE0E2;
+
+}
+body{
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: #333945;
+
+}
+.carousel-wrapper{
+    display: flex;
+    width: 80vw;
+    margin:3em 10vw;
+    overflow: hidden;
+}
+img{
+    width:100%;
+    animation:slide 5s linear infinite;
+
+}
+@keyframes slide{
+    0%{transform: translate(0%)}
+    18%{transform: translate(0%)}
+    36%{transform: translate(-100%)}
+    54%{transform: translate(-100%)}
+    72%{transform: translate(-200%)}
+    90%{transform: translate(-200%)}
+    100%{transform: translate(0%)}
+}
